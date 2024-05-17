@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "2005149827-ylDe7qK7" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "พี่ว่างไหม",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                }{
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://cdn.discordapp.com/attachments/1027152984657907712/1241102792110768208/46e0d3fc3191fddb.jpg?ex=6648fa8c&is=6647a90c&hm=09c4fa97b3acc0444581397dc055bee850c3e68844b89cd5360c2551cc11b7c2&",
+        "size": "full"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#000080",
+      "endColor": "#00BFFF"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💰 สิทธิประโยชน์มากมายรอคุณอยู่ 💰",
+            "align": "center",
+            "size": "sm",
+            "color": "#FFD700"
+          },
+          {
+            "type": "text",
+            "text": "★★★★★★★★★★",
+            "size": "md",
+            "align": "center",
+            "color": "#FFD700"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รับโค๊ด 50.-",
+                "align": "center",
+                "size": "sm",
+                "weight": "bold",
+                "color": "#FF0000"
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/UopORH6"
+            },
+            "paddingAll": "lg",
+            "cornerRadius": "lg",
+            "backgroundColor": "#00FF00"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "สมัครสมาชิก",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://autoflixth.com/"
+                },
+                "align": "center",
+                "size": "sm",
+                "weight": "bold",
+                "color": "#00FF00"
+              }
+            ],
+            "paddingAll": "lg",
+            "margin": "md",
+            "cornerRadius": "lg",
+            "backgroundColor": "#FF0033"
+          }
+        ],
+        "margin": "lg"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#000000",
+      "endColor": "#000080"
+    }
+  }
+}
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
